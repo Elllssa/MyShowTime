@@ -14,7 +14,13 @@ export class Concert {
   price: string;
 
   @Prop()
+  genre: string;
+
+  @Prop()
   _artists: Array<string>;
+
+  @Prop()
+  registered: Array<string>;
 }
 
 export const concertSchema = SchemaFactory.createForClass(Concert);
